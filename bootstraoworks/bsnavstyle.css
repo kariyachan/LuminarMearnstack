@@ -1,0 +1,26 @@
+body {
+    height: 200px;
+  }
+  .nav-item a:hover {
+    background-color: blanchedalmond;
+  }
+  .row h2{
+      color: #5e068a;
+      font-weight: bolder;
+  }
+  h2 span:nth-child(1){
+      color: #5e068a99;
+  }
+  .btn-learn{
+    padding: 16px 27px;
+    font-weight: 600;
+    margin-top: 21px;
+    border-radius: 50px;
+    border: 2px solid #5e068a;
+  }
+  .btn-learn:hover{
+      background-color: white;
+      color: #5e068a;
+      border-color: #5e068a;
+
+  }

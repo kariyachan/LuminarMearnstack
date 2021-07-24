@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+}
+.b1{
+    border-radius: 25px;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.s1{
+    color: blueviolet;
+}
