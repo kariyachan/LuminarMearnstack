@@ -6,3 +6,5 @@ if(num%2===0)
 else{
     console.log(`${num}is odd number`);
 }
+//using ternary
+// console.log(num%2==0?"num is even":"num is odd");
