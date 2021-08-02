@@ -1,4 +1,4 @@
-var num=4;
+var num=10;
 for(let i=1;i<=num;i++)
 {
     let str="";
