@@ -1,8 +1,8 @@
 
 function findmissing(arr,n)
 {
-    var size=n+1;
-    var total=size*(size+1)/2;
+    var res=n+1;
+    var total=res*(res+1)/2;
     // console.log(total);
     var sum=0;
     for(let i=0;i<n;i++)
