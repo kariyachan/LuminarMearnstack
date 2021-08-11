@@ -6,6 +6,8 @@ var country = [
 ]
 
 
-country.forEach(country=>console.log(country.name," : ",country.currencies[0].name))
+// country.forEach(country=>console.log(country.name," : ",country.currencies[0].name))
 
 //country name , population
+
+country.forEach(country=>console.log(country.name," : ",country.population))
