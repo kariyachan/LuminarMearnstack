@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <div class="col-4">
+          <br><br><br>
+        <input type="text" id="search" placeholder="search by vaccine"/>
+        <button class="btn-warning" onclick="searchByVaccine()">
+          Serach
+        </button>
+        <br /><br />
+        <input type="text" id="dsearch" placeholder="search by district" />
+        <button class="btn-warning" onclick="searchByDistrict()">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button class="btn-primary" onclick="populateSlots()">Get slots</button>
+
+        <table class="table table-success table-striped">
+          <tr>
+            <td>center Name</td>
+            <td>Age Group</td>
+            <td>Slot</td>
+            <td>Vaccine</td>
+            <td>District</td>
+          </tr>
+          <tbody id="result"></tbody>
+        </table>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </body>
+
+  <script>
+    var slots = [
+      {
+        center: "phc",
+        group: "18+",
+        time: "9-1",
+        vaccine: "co-vaxin",
+        district: "pkd",
+      },
+      {
+        center: "aims",
+        group: "65+",
+        time: "10-12",
+        vaccine: "co-vaxin",
+        district: "ekm",
+      },
+      {
+        center: "aster",
+        group: "18+",
+        time: "1-3",
+        vaccine: "co-vaxin",
+        district: "mpm",
+      },
+      {
+        center: "kims",
+        group: "65+",
+        time: "10-2",
+        vaccine: "co-vaxin",
+        district: "tvm",
+      },
+      {
+        center: "st.j",
+        group: "18+",
+        time: "1-3",
+        vaccine: "sputnic",
+        district: "tcr",
+      },
+      {
+        center: "co-op",
+        group: "18+",
+        time: "1-3",
+        vaccine: "sputnic",
+        district: "clt",
+      },
+      {
+        center: "ndm",
+        group: "18+",
+        time: "1-3",
+        vaccine: "covidshield",
+        district: "ekm",
+      },
+      {
+        center: "ptd",
+        group: "18+",
+        time: "1-3",
+        vaccine: "covidshield",
+        district: "idk",
+      },
+    ];
+
+    function populateSlots() {
+      let html_data = "";
+      for (let slot of slots) {
+        html_data += `<tr><td>${slot.center}</td><td>${slot.group}</td><td>${slot.time}</td><td>${slot.vaccine}</td> <td>${slot.district}</td></tr>`;
+      }
+      result.innerHTML = html_data;
+    }
+    function popdata(data) {
+      let html_data = "";
+      for (let slot of data) {
+        html_data += `<tr><td>${slot.center}</td><td>${slot.group}</td><td>${slot.time}</td><td>${slot.vaccine}</td><td>${slot.district}</td></tr>`;
+      }
+      result.innerHTML = html_data;
+    }
+    function searchByVaccine() {
+      let vaccine_name = search.value;
+      let data = slots.filter((slot) => slot.vaccine == vaccine_name);
+      popdata(data);
+    }
+    function searchByDistrict() {
+      let district_name = dsearch.value;
+      let data = slots.filter((slot) => slot.district == district_name);
+      popdata(data);
+    }
+  </script>
+</html>

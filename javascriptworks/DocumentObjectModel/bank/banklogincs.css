@@ -1,0 +1,59 @@
+body{
+    background-color:rgb(1, 18, 26);
+    color: white;
+}
+div{
+    position: relative;
+    align-items: center;
+    left: 49%;
+    top: 2%;
+}
+.s1{
+    position: relative;
+    width: 320px;
+    height: 250px;
+    border: 0.5px solid rgb(89, 86, 86);
+    left: 40%;
+    padding-left: 2%;
+    background-color: rgb(3, 28, 39);
+    border-radius: 25px;
+   
+}
+button{
+    width: 280px;
+    height: 35px;
+    border-style: hidden;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 25px;
+    
+}
+.f1{
+    background-color: rgb(1, 18, 26);
+    border-style: hidden;
+    width: 280px;
+    height: 30px;
+    border-radius: 25px;
+}
+.s2{
+    position: relative;
+    left: 45%;
+}
+.s3{
+    position: relative;
+    width: 290px;
+    height: 80px;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    margin-top: 2%;
+    left: 41%;
+    padding-left: 3%;
+    padding-top: 2.5%;
+}
+a{
+    color: rgb(31, 70, 196);
+    position: absolute;
+    left: 170px;
+    font-style: normal;
+    text-decoration: none;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS only -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous"
+      />
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="stylesheet" href="acCreate.css">
+      <script src="https://kit.fontawesome.com/5677e0b63a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <i class="fas fa-6x fa-piggy-bank"></i>
+            <h1>Bank Account Create Form</h1>
+        </div>
+        <br><br>
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">Account Number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="acno" name="Accountnumber" placeholder="Your a/c number..">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Accunt Type</label>
+          </div>
+          <div class="col-75">
+            <select id="actype" name="accountype">
+            <option value="saving">Saving</option>
+              <option value="salary">Salary</option>
+              <option value="fixed">Fixed</option>
+              <option value="nri">NRI</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="balance">Balance</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="balance" name="balance" placeholder="Your a/c balance..">
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password"  placeholder="use a strong password..">
+            </div>
+          </div>
+          <br><br>
+        <div class="row">
+           
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+        /home/vargheese/Desktop/mearn_stack/css_work/githublogin.html
+</html>
